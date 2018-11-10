@@ -1,0 +1,17 @@
+.jumbotron {
+    text-align: center;
+    background-color: brown;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+table {
+    border: 1px solid blue;
+}
+
+h2 {
+    text-align: center;
+}

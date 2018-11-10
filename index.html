@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Boostrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    
+<!-- External CSS File -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Train Scheduler</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to the Hogwarts Express!</h1>
+        <p>All Aboard!</p>
+    </div>
+    <h2>The Current Time Is: <span id=current_time></span></h2>
+        <table class="table" id="trainTable">
+                <h3>Today's Train Schedule</h3>
+                <thead>
+                  <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody id="trainBody">
+
+
+                </tbody>
+              </table>
+
+                <div class="col-sm-12">
+                    <label>Add a Train</label>
+                    <form>
+                    <div id="train_name_row">
+                        <label for="train_name">Train Name</label>
+                        <div class="input-group-prepend">
+                            <input type="text" class="form-control" id="train_name">
+                        </div>
+                        <br>
+                        <div id="destination_row">
+                            <label for="destination">Destination</label>
+                                <div class="input-group-prepend">
+                                    <input type="text" class="form-control" id="destination">
+                                </div>
+                        <br>
+                        <div id="first_train_time_row">
+                            <label for="first train time">First Train Time (HH:MM - military time)</label>
+                                <div class="input-group-prepend">
+                                    <input type="text" class="form-control" placeholder="Use Military Time" id="first_train_time">
+                                </div>
+                        <br>
+                        <div id="frequency_row">
+                            <label for="frequency">Frequency (min)</label>
+                                <div class="input-group-prepend">
+                                    <input type="text" class="form-control" id="frequency">
+                                </div>
+                        <br>
+                    <button class="btn-primary btn-lg" type="button" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+    <!-- Firebase JS Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <!-- JQuery Link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!--External JS File-->
+    <script src="assets/javascript/javascript.js"></script>
+      <!-- Link to Moment.js -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</body>
+</html>
